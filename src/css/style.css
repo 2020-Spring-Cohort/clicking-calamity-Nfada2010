@@ -1,0 +1,43 @@
+.header{
+    background-color: rgba(13, 24, 226, 0.452);
+    font-size: 50px;
+}
+
+.mainContainer1{
+     background-color: rgba(210, 105, 30, 0.68);
+font-size: 30px;
+ }
+
+.mainContainer2{
+    background-color: rgba(197, 210, 43, 0.68);
+    font-size: 30px;
+
+}
+
+.mainContainer3{
+    background-color: rgba(88, 210, 16, 0.68);
+    font-size: 30px;
+
+}
+.container{
+    background-color: rgba(138, 65, 129, 0.411);
+
+}
+
+.body{
+   
+   background-image: url(https://images.unsplash.com/photo-1485745655111-3272a37e76a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.footer{
+    background-color: rgba(139, 0, 2, 0.62);
+    font-size: 50px;
+
+}
+
+.holderOfBoxes{
+    background-color: rgba(102, 102, 102, 0.63);
+}
+
