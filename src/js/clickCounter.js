@@ -9,4 +9,6 @@ class ClickCount {
     getCompanionCount(){
         return 0;
     }
+
+  
 }
