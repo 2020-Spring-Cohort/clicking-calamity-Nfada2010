@@ -1,3 +1,5 @@
+
+
 describe('click counter tests', () =>{
     let underTest ;
     beforeEach(() => {
@@ -24,7 +26,7 @@ describe('countClick() records clicks and clickCounter() gives the click count',
 
     describe('Click companions', () =>{
         it("clickCounter should have 0 when new,", () => {
-            expect(underTest.getCompanionCount()).toBe(0);
+            expect(underTest.getShiaCount()).toBe(0);
         });
     });
     // console.log(underTest.clickCount)

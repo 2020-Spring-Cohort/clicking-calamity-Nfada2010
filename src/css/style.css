@@ -41,3 +41,8 @@ background-size: cover;
     background-color: rgba(102, 102, 102, 0.63);
 }
 
+.html{
+    background-image: url(https://images.unsplash.com/photo-1485745655111-3272a37e76a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
