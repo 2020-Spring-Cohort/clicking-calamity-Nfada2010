@@ -6,9 +6,7 @@
     <title>Cookie counter of over indulgence</title>
     <link rel="stylesheet" href = "../clicking-calamity-Nfada2010/src/css/layout.css">
     <link rel="stylesheet" href = "../clicking-calamity-Nfada2010/src/css/style.css">
-    <link rel="stylesheet" href = "../clicking-calamity-Nfada2010/src/js/app.js">
-    <link rel="stylesheet" href = "../clicking-calamity-Nfada2010/src/js/clickCounter.js">
-    <!-- <link rel="stylesheet" href = "../clicking-calamity-Nfada2010/src/js/clickShiaCounter.js"> -->
+  
 
 
 </head>
@@ -18,65 +16,23 @@ Cookie Counter
 
 </header>
 
-
-
 <body class="body">
-
     <div class="container">
-
         <div class="clickContainer">
 
-            <img id="Cookie-Download-PNG" src="Cookie-Download-PNG.png" alt="cookie" height = 300px width= 300px> 
-            clickCount: <span id="Cookie-Download-PNG">0</span>
+            <img id="countClick" onclick= "countClick()" src="Cookie-Download-PNG.png" alt="cookie" height = 300px width= 300px> 
+            
+            <!-- <button onclick="countClick()"> Cookie Click </button> -->
 
-            <img id="Cookie-PNG-HD" src="Cookie-PNG-HD.png" alt="multiCookie" height = 300px width= 300px> 
-            <span class="Cookie-PNG-HD">0</span>
-            stackCost: <span class="stackCost">10</span>
-
-            <img id="Shia-Labeouf-PNG-Image" src="Shia-Labeouf-PNG-Image.png" alt="Shia" height = 300px width= 300px> 
-            shiaCost: <span class="shiaCost">100</span>
-            clickShiaCount: <span class="clickShiaCount">0</span>
-
+            <img id="stackClick"  onclick="stackClick()"src="Cookie-PNG-HD.png" alt="multiCookie" height = 300px width= 300px> 
+            
+        
+            <img id="shiaClick" onclick="shiaClick()" src="Shia-Labeouf-PNG-Image.png" alt="Shia" height = 300px width= 300px> 
+        
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
     <script src="src/js/clickCounter.js"></script>
-    <script src="src/js/clickShiaCounter.js"></script>
-    <script src="src/js/clickStackCounter.js"></script>
     <script src="src/js/app.js"></script>
-    
-    <script>
-        $(function(){
-     let clickCounter=0;
-      $('#Cookie-Download-PNG').click(function(){
-         $(this).html(clickCounter++).text(clickCounter);
-         
-        });
-      });
-     </script>
-
-<script>
-    $(function(){
- let clickStackCount=0;
-  $('#Cookie-PNG-HD').click(function(){
-     $(this).html(clickStackCount++);
-     
-    });
-  });
- </script>
-
-<script>
-    $(function(){
- let clickShiaCount=0;
-  $('#Shia-Labeouf-PNG-Image').click(function(){
-     $(this).html(clickShiaCount++);
-     
-    });
-  });
- </script>
-
- 
 </body>
 
 
@@ -84,20 +40,21 @@ Cookie Counter
 
     <div class ="mainContainer1">
         Cookies made
-        <h1 id="Cookie-Download-PNG">0</h1>
+        <span id="clickCount">0</span>
     </div>
     
     <div class ="mainContainer2">
         Cookies made per Bake 
-    <h2 id="Cookie-PNG-HD">0</h2>
-       
+        <span id="stackCount">0</span>
     </div>
     
     <div class ="mainContainer3">
-    Shia La Buffs Helping you Bake.
-    <h3 id="Shia-Labeouf-PNG-Image">0</h3>
-    </div>
+    Shia La Buffs Helping
+    <span id="shiaCount">0</span>
+</div>
     
+
+
     </div>
 
 <footer class="footer">
@@ -105,7 +62,8 @@ Cookie Counter
     footer
 </footer>
 
-
+<script src="src/js/clickCounter.js"></script>
+    <script src="src/js/app.js"></script>
 
 
 </html>

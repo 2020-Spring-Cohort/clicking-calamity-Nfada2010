@@ -24,12 +24,45 @@ describe('countClick() records clicks and clickCounter() gives the click count',
 
     });
 
-    describe('Click companions', () =>{
-        it("clickCounter should have 0 when new,", () => {
+    describe('Click shia', () =>{
+        it("clickShiaCounter should have 0 when new,", () => {
             expect(underTest.getShiaCount()).toBe(0);
         });
     });
     // console.log(underTest.clickCount)
     // console.log(clickCount)
 });
+
+const buyShia = (ClickShiaCount,buyShia) =>{
+    const shiaCost = Math.floor(100 * Math.pow(1.1,shia));
+    if(ClickCount >= shiaCost){
+        ClickShiaCount = ClickShiaCount + 1;
+        ClickCount = ClickCount - shiaCost;
+        document.querySelector('ClickShiaCount').innerHTML=ClickShiaCount;
+        document.querySelector('ClickCount').innerHTML=ClickCount;
+    };
+
+    let nextShiaPrice = Math.floor(100 * Math.pow(1.1,ClickShiaCount));
+    document.querySelector('shiaCost').innerHTML = nextShiaPrice;
+};
+window.setInterval(function(){
+	
+	clickCount(shia);
+	
+}, 1000);
+
+
+
+const buyStack = (stack,buyStack) =>{
+    const stackCost = Math.floor(10 * Math.pow(1.1,stack));
+    if(ClickCount >= StackCost){
+        stack = stack + 1;
+        ClickCount = ClickCount - stackCost;
+        document.querySelector('stackCount').innerHTML=stack;
+        document.querySelector('ClickCount').innerHTML=ClickCount;
+    };
+
+    let nextStackPrice = Math.floor(100 * Math.pow(1.1,stack));
+    document.querySelector('stackCost').innerHTML = nextStackPrice;
+};
 });
