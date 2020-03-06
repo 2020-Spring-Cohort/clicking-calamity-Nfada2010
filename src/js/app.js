@@ -3,13 +3,13 @@
   function countClick()  {
       document.getElementById("clickCount").innerHTML = i++ + 1;
   }
-      var i = 0
+      var s = 0
       function shiaClick()  {
-          document.getElementById("shiaCount").innerHTML = i++ + 1;
+          document.getElementById("shiaCount").innerHTML = s++ + 1;
       }
-          var i = 0
+          var q = 0
       function stackClick()  {
-          document.getElementById("stackCount").innerHTML = i++ + 1;
+          document.getElementById("stackCount").innerHTML = q++ + 1;
       }
 
 const updateClickCountdisplay = (clickCountElement, clickCount)=>{
