@@ -1,45 +1,60 @@
 .header{
-    background-color: rgba(13, 24, 226, 0.452);
+    background-color: rgba(13, 34, 226, 0.452);
     font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
 
 .mainContainer1{
      background-color: rgba(210, 105, 30, 0.68);
 font-size: 30px;
+border-style: dotted;
+border-inline-color: black;
  }
 
 .mainContainer2{
-    background-color: rgba(197, 210, 43, 0.68);
+    background-color: rgba(30, 93, 210, 0.589);
     font-size: 30px;
+    border-style: dotted;
+border-inline-color: black;
 
 }
 
 .mainContainer3{
-    background-color: rgba(88, 210, 16, 0.68);
+    background-color: rgba(210, 105, 30, 0.68);
     font-size: 30px;
+    border-style: dotted;
+border-inline-color: black;
 
 }
 .container{
-    background-color: rgba(138, 65, 129, 0.411);
+    
+    /* background-color: rgba(13, 34, 226, 0.589); */
 
 }
 
 .body{
    
-   background-image: url(https://images.unsplash.com/photo-1485745655111-3272a37e76a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+   /* background-image: url(https://images.unsplash.com/photo-1485745655111-3272a37e76a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80); */
 background-repeat: no-repeat;
 background-size: cover;
 }
 
 .footer{
-    background-color: rgba(139, 0, 2, 0.62);
-    font-size: 50px;
+    background-color: rgba(13, 34, 226, 0.452);
+    font-size: 30px;
+    color: white;
+    
+    font-family: fantasy;
 
 }
 
 .reset{
-    background-color:rgba(255, 1, 6, 0.205); 
-    font-size: 50px;
+    background-color:rgba(255, 1, 5, 0.726); 
+    font-size: 30px;
+    color: black;
+    font-style: white;
+    background-image: repeating-radial-gradient(rgba(233, 16, 16, 0.589), rgba(255, 255, 255, 0.5) , rgba(235, 10, 10, 0.5) );
 
 }
 

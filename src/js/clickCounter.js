@@ -1,10 +1,12 @@
 
-let clickCount=0
-let shiaCount=0
-let stackCount=0
+
 
 class ClickCounter {
-    
+     clickCount=0
+ shiaCount=0
+ stackCount=0
+
+
     constructor() {
         this.clickCount = 0;
         this.shiaCount=0;
@@ -12,33 +14,68 @@ class ClickCounter {
         this.shiaCost = 100;
         this.stackCost = 10;
         var i = 0
+        var q = 0
+        var s = 0
 
     }
 
-
+    
 
      buyShia(){
-        clickCount - this.shiaCost 
-        if(this._clickCount < this.shiaCost){
-            this._clickCount =0;
+        if(this._clickCount>=this.shiaCost){
+            this._clickCount -= 100;
+            this.shiaCount++;
         }
-        else(this.clickCount>this.shiaCost);{
-           this._clickCount - this.shiaCost;
-            this.shiaClick++;
+
+
+        // clickCount - this.shiaCost 
+        // if(this._clickCount < this.shiaCost){
+        //     this._clickCount =0;
+        // }
+        // else(this.clickCount>this.shiaCost);{
+        //    this._clickCount - this.shiaCost;
+        //     this.shiaClick++;
+        // }
+    }
+
+
+    shiaCost(){
+        this.shiaCost=100;
+        if(this.clickCount >= this.shiaCost){
+            this.clickCount = this.clickCount - this.shiaCost;
+            this.shiaCost +=Math.floor(this.shiaCost*.10);
         }
     }
 
 
      buyStack(){
-        clickCount - this.stackCost 
-        if(this._clickCount < this.stackCost){
-            this._clickCount=0;
+        if(this._clickCount >= this._stackCost){
+            this._clickCount -= 10;
+            this._stackCount++;
         }
-        else(this.clickCount>this.stackCost);{
-            this.stackClick++;
+
+        // clickCount - this.stackCost 
+        // if(this._clickCount < this.stackCost){
+        //     this._clickCount=0;
+        // }
+        // else(this.clickCount>this.stackCost);{
+        //     this.stackClick++;
+        // }
+    }
+
+
+    stackCost(){
+        this.stackCost = 10;
+        if(this.clickCount >= this.stackCost){
+            this.clickCount = this.clickCount - this.stackCost;
+            this.stackCost +=Math.floor(this.stackCost*.10);
         }
     }
 
+
+    getShiaCount(){
+        return 0;
+    }
      getShiaCount(){
         return this.shiaCount;
     }

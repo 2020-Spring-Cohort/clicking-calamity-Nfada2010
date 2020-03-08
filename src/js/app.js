@@ -39,6 +39,16 @@ const makeCookieIntoClickCounter = (_countClick,clickCountDisplay,clickCounter)=
     }
   
     }
+
+    function timer(){
+        clickCount = clickCoint + shiaClick;
+        clickCount = clickCount + stackCount;
+        updateClickCountdisplay()
+        updateShiaCountDisplay()
+        updateStackCountDisplay()
+    };
+
+    setInterval(timer,1000)
     
     const clickCountButton = document.querySelector('clickCounter');
     const clickShiaButton = document.querySelector('shiaClick') 
