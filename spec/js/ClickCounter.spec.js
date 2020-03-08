@@ -29,11 +29,10 @@ describe('countClick() records clicks and clickCounter() gives the click count',
             expect(underTest.getShiaCount()).toBe(0);
         });
     });
-    // console.log(underTest.clickCount)
-    // console.log(clickCount)
+  
 });
 
-const buyShia = (ClickShiaCount,buyShia) =>{
+const buyShia = (ClickShiaCount,buyShia,clickCounter) =>{
     const shiaCost = Math.floor(100 * Math.pow(1.1,shia));
     if(ClickCount >= shiaCost){
         ClickShiaCount = ClickShiaCount + 1;

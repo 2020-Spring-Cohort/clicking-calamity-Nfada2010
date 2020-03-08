@@ -15,21 +15,6 @@ class ClickCounter {
 
     }
 
-    
-
-    //  countClick()  {
-
-    //     document.getElementById("clickCount").innerHTML = i++ + 1;
-    // }
-
-    //  shiaClick(){
-    //     document.getElementById("shiaCount").innerHTML = i++ + 1;
-    // }
-
-    //  stackClick(){
-    //     document.getElementById("stackCount").innerHTML = i++ + 1;
-    //     }
-
 
 
      buyShia(){
@@ -37,7 +22,8 @@ class ClickCounter {
         if(this._clickCount < this.shiaCost){
             this._clickCount =0;
         }
-        else(this.clickCount>this.shiaCost){
+        else(this.clickCount>this.shiaCost);{
+           this._clickCount - this.shiaCost;
             this.shiaClick++;
         }
     }
@@ -48,7 +34,7 @@ class ClickCounter {
         if(this._clickCount < this.stackCost){
             this._clickCount=0;
         }
-        else(this.clickCount>this.stackCost){
+        else(this.clickCount>this.stackCost);{
             this.stackClick++;
         }
     }

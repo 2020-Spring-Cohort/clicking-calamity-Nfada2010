@@ -37,6 +37,12 @@ background-size: cover;
 
 }
 
+.reset{
+    background-color:rgba(255, 1, 6, 0.205); 
+    font-size: 50px;
+
+}
+
 .holderOfBoxes{
     background-color: rgba(102, 102, 102, 0.63);
 }
