@@ -1,7 +1,7 @@
 
   var i = 0
   function countClick()  {
-      document.getElementById("clickCount").innerHTML = i++ + 1;
+      document.getElementById("clickCount").innerHTML = i++ + s + q;
   }
       var s = 0
       function shiaClick()  {
@@ -12,43 +12,55 @@
           document.getElementById("stackCount").innerHTML = q++ + 1;
       }
 
-const updateClickCountdisplay = (clickCountElement, clickCount)=>{
-    clickCountElement.innerText = clickCount.getClickCount();
-}
 
-const updateShiaCountDisplay = (clickShiaElement, shiaCount)=>{
-    clickShiaElement.innerText = shiaCount.getShiaCount();
-}
+      function updateClickCountersDisplays(){
+          document.getElementById("clickCountDisplay").innerHTML=getClickCount;
+          document.getElementById("shiaCountDisplay").innerHTML=getShiaCount;
+          document.getElementById("stackCountDisplay").innerHTML=getStackCount;
+      }
 
-const updateStackCountDisplay = (clickStackElement, stackCount)=>{
-    clickStackElement.innerText = stackCount.getStackCount();
-}
+      function updateCosts(){
+          document.getElementById("shiaCost").innerHTML = shiaCost
+          document.getElementById("stackCost").innerHTML = stackCost
+
+      }
 
 
 const makeCookieIntoClickCounter = (_countClick,clickCountDisplay,clickCounter)=>{
     countClick.addEventListener('click',()=>{
         clickCounter.countClick();
-        updateClickCountdisplay(clickCountDisplay,countClick,ClickCounter)
+        updateClickCountersDisplays();
     })
+}
 
-    const makeCookieStackIntoClickStackCounter = (_stackClick,stackCountDisplay)=>{
+    const makeCookieStackIntoClickStackCounter = (_stackClick,stackCountDisplay,stackCount)=>{
         countStackClick.addEventListener('click',()=>{
             stackClick.countStackClick();
-            updateStackCountDisplay(stackCountDisplay,stackClick)
+            clickCount - stackCost;
+            updateClickCountersDisplays();
+        })
+    }
+
+    const makeShiaIntoClickShiaCounter = (_shiaClick,shiaCountDisplay)=>{
+        countShiaClick.addEventListener('click',()=>{
+            shiaClick.countShiaClick();
+            clickCount - shiaCost;
+            updateClickCountersDisplays();
         })
     }
   
-    }
+    
 
     function timer(){
-        clickCount = clickCoint + shiaClick;
+        clickCount = clickCount + shiaClick;
         clickCount = clickCount + stackCount;
-        updateClickCountdisplay()
-        updateShiaCountDisplay()
-        updateStackCountDisplay()
+        updateClickCountdisplay();
+        updateShiaCountDisplay();
+        updateStackCountDisplay();
+        setInterval(timer,100)
+
     };
 
-    setInterval(timer,1000)
     
     const clickCountButton = document.querySelector('clickCounter');
     const clickShiaButton = document.querySelector('shiaClick') 

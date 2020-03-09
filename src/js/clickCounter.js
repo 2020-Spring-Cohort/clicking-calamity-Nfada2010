@@ -2,9 +2,14 @@
 
 
 class ClickCounter {
-     clickCount=0
- shiaCount=0
- stackCount=0
+
+
+
+//      clickCount=0
+//  shiaCount=0
+//  stackCount=0
+
+
 
 
     constructor() {
@@ -19,53 +24,42 @@ class ClickCounter {
 
     }
 
+
     
 
      buyShia(){
         if(this._clickCount>=this.shiaCost){
+            clickShiaButton.disabled = false;
             this._clickCount -= 100;
             this.shiaCount++;
         }
+        else()=>{
+            clickShiaButton.disabled = true;
+        };
 
-
-        // clickCount - this.shiaCost 
-        // if(this._clickCount < this.shiaCost){
-        //     this._clickCount =0;
-        // }
-        // else(this.clickCount>this.shiaCost);{
-        //    this._clickCount - this.shiaCost;
-        //     this.shiaClick++;
-        // }
     }
 
 
     shiaCost(){
-        this.shiaCost=100;
         if(this.clickCount >= this.shiaCost){
             this.clickCount = this.clickCount - this.shiaCost;
-            this.shiaCost +=Math.floor(this.shiaCost*.10);
+            this.shiaCost +=Math.floor(this.shiaCost*.20);
         }
+    
     }
 
 
      buyStack(){
-        if(this._clickCount >= this._stackCost){
-            this._clickCount -= 10;
-            this._stackCount++;
+        if(this.clickCount >= this.stackCost){
+            this.clickCount -= 10;
+            this.stackCount++;
         }
 
-        // clickCount - this.stackCost 
-        // if(this._clickCount < this.stackCost){
-        //     this._clickCount=0;
-        // }
-        // else(this.clickCount>this.stackCost);{
-        //     this.stackClick++;
-        // }
+    
     }
 
 
     stackCost(){
-        this.stackCost = 10;
         if(this.clickCount >= this.stackCost){
             this.clickCount = this.clickCount - this.stackCost;
             this.stackCost +=Math.floor(this.stackCost*.10);
@@ -76,18 +70,23 @@ class ClickCounter {
     getShiaCount(){
         return 0;
     }
-     getShiaCount(){
+    getShiaCount(){
         return this.shiaCount;
     }
 
-     getStackCount(){
+    getStackCount(){
         return this.stackCount;
     }
 
-     reset(){
+    getStackCount(){
+        return 0;
+    }
+
+    reset(){
         this._clickCount = 0;
         this._shiaCount = 0;
         this._stackCount = 0;
+        updateClickCountersDisplays();
     }
 }
 
