@@ -12,6 +12,10 @@ border-style: dotted;
 border-inline-color: black;
  }
 
+ .mainContainer1 :hover{
+    background-color: rgba(255, 146, 68, 0.68);
+ }
+
 .mainContainer2{
     background-color: rgba(30, 93, 210, 0.589);
     font-size: 30px;
@@ -20,6 +24,10 @@ border-inline-color: black;
 
 }
 
+.mainContainer2 :hover{
+    background-color: rgba(255, 146, 68, 0.68);
+ }
+
 .mainContainer3{
     background-color: rgba(210, 105, 30, 0.68);
     font-size: 30px;
@@ -27,6 +35,10 @@ border-inline-color: black;
 border-inline-color: black;
 
 }
+
+.mainContainer3 :hover{
+    background-color: rgba(255, 146, 68, 0.68);
+ }
 .container{
     
     /* background-color: rgba(13, 34, 226, 0.589); */
@@ -54,7 +66,7 @@ background-size: cover;
     font-size: 30px;
     color: black;
     font-style: white;
-    background-image: repeating-radial-gradient(rgba(233, 16, 16, 0.589), rgba(255, 255, 255, 0.5) , rgba(235, 10, 10, 0.5) );
+    
 
 }
 
@@ -67,4 +79,21 @@ background-size: cover;
     background-image: url(https://images.unsplash.com/photo-1485745655111-3272a37e76a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+
+
+.countClick :hover{
+size: 110%;
+}
+
+.reset :hover{
+    background-image: repeating-radial-gradient(rgba(250, 46, 46, 0.589), rgba(255, 255, 255, 0.664) , rgba(255, 37, 37, 0.5) );
+    }
+
+.button{
+    border-color: antiquewhite;
+    border-width: 2px;
+    border-style: solid;
 }
